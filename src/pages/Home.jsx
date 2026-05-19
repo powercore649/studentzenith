@@ -501,7 +501,7 @@ export default function Home() {
           </div>
         </div>
         <div className="home-footer-bottom">
-          <p>&copy; {new Date().getFullYear()} zyntra. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} zyntra. All rights reserved. for support: zyntra.dpdns.org@zohomail.eu</p>
         </div>
       </footer>
     </div>
