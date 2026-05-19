@@ -25,6 +25,7 @@ export default function Login() {
 
   return (
     <div className="login-body animate-route-enter">
+
       <div className="login-card glass-panel">
         <div style={{
           display: 'flex',
@@ -54,7 +55,7 @@ export default function Login() {
 
         <h2 className="brand-text-glow" style={{ margin: 0, paddingBottom: '5px' }}>zyntra</h2>
         <p>Premium Guild Management & Automation</p>
-        
+
         {!status ? (
           <a href="/api/auth/login" className="btn-discord" style={{ textDecoration: 'none' }}>
             <i className="fa-brands fa-discord"></i> Login to zyntra with Discord
@@ -62,29 +63,32 @@ export default function Login() {
         ) : (
           <div id="login-status">
             <span style={{ color: status.type === 'success' ? '#4ADE80' : 'red' }}>
-              {status.type === 'error' && <i className="fa-solid fa-circle-exclamation" style={{ marginRight: '8px' }}></i>}
+              {status.type === 'error' && (
+                <i className="fa-solid fa-circle-exclamation" style={{ marginRight: '8px' }}></i>
+              )}
               {status.text}
             </span>
           </div>
         )}
       </div>
 
-      {/* FOOTER */}
+      {/* FOOTER JUSTE SOUS LE CONTENU */}
       <footer style={{
-        marginTop: "40px",
+        marginTop: "20px",
         textAlign: "center",
         fontSize: "0.85rem",
         opacity: 0.7,
         color: "#fff"
       }}>
-        for support contact us: 
+        for support contact us:
         <a 
-          href="mailto:zyntra.dpdns.org@zohomail.eu" 
-          style={{ color: "#7aa2ff", textDecoration: "none", marginLeft: "5px" }}
+          href="mailto:zyntra.dpdns.org@zohomail.eu"
+          style={{ color: "#7aa2ff", marginLeft: "5px", textDecoration: "none" }}
         >
           zyntra.dpdns.org@zohomail.eu
         </a>
       </footer>
+
     </div>
   );
 }
