@@ -51,6 +51,7 @@ export default function Login() {
             Z
           </span>
         </div>
+
         <h2 className="brand-text-glow" style={{ margin: 0, paddingBottom: '5px' }}>zyntra</h2>
         <p>Premium Guild Management & Automation</p>
         
@@ -67,7 +68,23 @@ export default function Login() {
           </div>
         )}
       </div>
+
+      {/* FOOTER */}
+      <footer style={{
+        marginTop: "40px",
+        textAlign: "center",
+        fontSize: "0.85rem",
+        opacity: 0.7,
+        color: "#fff"
+      }}>
+        for support contact us: 
+        <a 
+          href="mailto:zyntra.dpdns.org@zohomail.eu" 
+          style={{ color: "#7aa2ff", textDecoration: "none", marginLeft: "5px" }}
+        >
+          zyntra.dpdns.org@zohomail.eu
+        </a>
+      </footer>
     </div>
   );
 }
-
